@@ -19,10 +19,10 @@ int main(){
 		printf("No solution in this interval!\n");
 		return 1;
 	}else if(f(a)==0){
-		printf("The exact solution is %.8f\n",f(a));
+		printf("The exact solution is %.6f\n",f(a));
 		return 2;
 	}else if(f(b)==0){
-		printf("The exact solution is %.8f\n",f(b));
+		printf("The exact solution is %.6f\n",f(b));
 		return 3;
 	}
 	
@@ -38,9 +38,9 @@ int main(){
 	/*Computation of the solution*/
 	while(0.5*fabs(b-a)>eps){
 		mp=0.5*(b+a);
-		fprintf(fp,"%d\t%10.8f\n",++i,mp);
+		fprintf(fp,"%d\t%10.6f\n",++i,mp);
 		if(f(mp)==0){
-			printf("The exact solution is %.8f\n",f(mp));
+			printf("The exact solution is %.6f\n",f(mp));
 			return 4;
 		}
 		else if(f(a)*f(mp)<0) b=mp;
@@ -48,7 +48,7 @@ int main(){
 	}
 	fclose(fp);
 	
-	printf("The found solution is %.8f within an error of %.8f\n",0.5*(b+a),0.5*fabs(b-a));
+	printf("The found solution is %.6f within an error of %.6f\n",0.5*(b+a),0.5*fabs(b-a));
 	
 	return 0;
 }
