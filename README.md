@@ -11,3 +11,5 @@ The only method presented leads to the Gregory-Newton formulae, using finite dif
 ## Numerical integration
 Both the routine listed consist of composite closed integration, found using a Gregory-Newton forward formula to find the approximation-polynomial. In "trapezium.c" it is used a piecewise-linear integration which leads to teh Trapezium Rule; in "simpson.c" it is used a piecewise-quadratic integration, which turns out to the Simpson Rule.
 
+## Ordinary differential equation
+Here there are presented only two single-step method based on the Runge-Kutta alghoritms, helpful for initial-value problems. "heun.c" consists of a second-order Runge-Kutta method whereas "RK4.c" is, obviously, a fourth-order Runge-Kutta method. 
