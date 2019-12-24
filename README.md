@@ -1,4 +1,4 @@
-# Metodi_numerici
+# Metodi numerici
 Some of the codes that were put forward in the "Metodi numerici per la fisica" lectures' at Unipa.
 
 # Non linear equations
