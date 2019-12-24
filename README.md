@@ -7,3 +7,8 @@ All of three are presented in specific implementation in order to solve a partic
 
 # Interpolation
 The only method presented leads to the Gregory-Newton formulae, using finite differences. Both forward and backward Newton interpolation are implemented in "inter.c".
+
+# Numerical integration
+Both the routine listed consist of composite closed integration, found using a Gregory-Newton forward formula to find the approximation-polynomial. In "trapezium.c" it is used a piecewise-linear integration which leads to teh Trapezium Rule; in "simpson.c" it is used a piecewise-quadratic integration, which turn out to the Simpson Rule.
+
+
