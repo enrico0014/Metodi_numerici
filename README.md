@@ -13,3 +13,8 @@ Both the routine listed consist of composite closed integration, found using a G
 
 ## Ordinary differential equation
 Here there are presented only two single-step method based on the Runge-Kutta alghoritms, helpful for initial-value problems. "heun.c" consists of a second-order Runge-Kutta method whereas "RK4.c" is, obviously, a fourth-order Runge-Kutta method. 
+
+## Linear systems
+Methods of solving systems of linear equations falls into two categories: direct methods and iterative ones. Examples of both tecniques are here listed. 
+The iterative tecniques presented are the Jacobi Method, implemented in "jacobi.c", and the Successive-Over-Relaxation Method, used in "SOR.c". We notice that the Gauss-Seidel Method could be implemented only posing in "SOR.c" the relaxation factor equal to one. This explains why explicit routines for G-S Method are not listed.
+On the direct side, the only source code listed implements the LU Factorization with Doolittle's Method("LU.c"). Routines for bacward and forward substitution in triangular systems could be found also in "LU.c", so they are not taken apart.
