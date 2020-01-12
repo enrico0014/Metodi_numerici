@@ -1,5 +1,5 @@
 # Metodi numerici
-Some of the codes that were put forward in the "Metodi numerici per la fisica" lectures' at Unipa.
+Some of the codes presented in the "Metodi numerici per la fisica" lectures' at Unipa.
 
 ## Non linear equations
 Three methods are presented here. "bis.c" implements a basic bisection method, "gen.c" consists of a sequence generator method and "rap.c" show the Newton-Raphson method. 
@@ -12,7 +12,7 @@ The only method presented leads to the Gregory-Newton formulae, using finite dif
 Both the routine listed consist of composite closed integration, found using a Gregory-Newton forward formula to find the approximating-polynomial. In "trapezium.c" it is used a piecewise-linear integration which leads to teh Trapezium Rule; in "simpson.c" it is used a piecewise-quadratic integration, which turns out to the Simpson Rule.
 
 ## Ordinary differential equation
-Here there are presented only two single-step method based on the Runge-Kutta alghoritms, helpful for initial-value problems. "heun.c" consists of a second-order Runge-Kutta method whereas "RK4.c" is, obviously, a fourth-order Runge-Kutta method. 
+Here there are presented two single-step method based on the Runge-Kutta alghoritms and a predictor-corrector method, based on the Adams-Bashfort-Moulton formulae, helpful for initial-value problems. "heun.c" consists of a second-order Runge-Kutta method whereas "RK4.c" is, obviously, a fourth-order Runge-Kutta method. Finally, in "predictor-corrector.c" it's presented a fourth-order predictor-corrector method with an iterative improvement of the solution.
 
 ## Linear systems
 Methods of solving systems of linear equations falls into two categories: direct methods and iterative ones. Examples of both tecniques are here listed. 
