@@ -47,8 +47,8 @@ int main(){
 	float* x=boxmull(N,x); 
 	
 	int nbin;
-    printf("In how many bins do yo want to divide your hystogram?\n");
-    scanf("%d",&nbin);
+    	printf("In how many bins do yo want to divide your hystogram?\n");
+   	scanf("%d",&nbin);
     
 	int* count = calloc(nbin,sizeof(*count));
 	float minimum = min(N,x);
@@ -60,7 +60,7 @@ int main(){
 	
 	FILE* fp;
 	fp=fopen("results.txt","w");
-    float norm = (float) 1./(dx*N); //normalization factor
+   	float norm = (float) 1./(dx*N); //normalization factor
 	for(int i=0;i<nbin;++i) fprintf(fp,"%f\n",*(count+i)*norm);
 	fclose(fp);
 
